@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+    
+
+
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+
+
+body {
+background-color: hsl(0, 0%, 95%);
+height: 100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+
+
+}
+
+
+main {
+    display:flex;
+    width: 900px;
+
+}
+main div {
+    padding: 50px;
+    width: 300px;
+   
+}
+main div img {
+    margin-bottom: 35px;
+}
+
+main div h1 {
+    color: #f2f2f2;
+}
+
+main div p {
+    margin: 30px 0;
+    font-size: 0.9em;
+    font-weight: 400;
+    font-family:'Lexend Deca', sans-serif; 
+}
+main div button {
+    background-color:white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+main div button:hover {
+    background-color: transparent;
+    box-shadow:  inset 0px 0px 0px 2px white;
+}
+
+main div button p {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 13px 25px;
+    margin: 0;
+}
+main div button p:hover {
+    color: #f2f2f2;
+}
+
+
+main .primeira-box {
+    background-color: #e38826;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+.primeira-box h1 {
+
+}
+.primeira-box p {
+
+}
+.primeira-box button p {
+    color: #e38826;
+}
+
+main .segunda-box{
+    background-color: #006970;
+    
+}
+.segunda-box button p {
+    color:#006970 ;
+}
+
+main .terceira-box{
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+}
+.terceira-box button p {
+    color: #004241;
+}
+@media (max-width:910px) {
+    body {
+        height: auto;
+        flex-direction: unset;
+    }
+    main {
+        flex-direction: column;
+        width: 300px;
+    }
+    main .primeira-box {
+        border-radius: 10px 10px 0 0 ;
+    }
+    main .terceira-box {
+        border-radius: 0 0 10px 10px;
+    }
+}
